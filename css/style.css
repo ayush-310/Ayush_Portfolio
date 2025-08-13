@@ -11345,3 +11345,212 @@ body {
   font-size: 0.9em;
   font-weight: 400;
 }
+
+.project-card {
+  background: #111;
+  color: white;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.project-header h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-body {
+  flex: 1;
+}
+
+.project-body p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+
+.project-body h6 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4ade80;
+  margin: 1rem 0 0.5rem;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.8rem;
+}
+
+.tech-badge img {
+  width: 14px;
+  height: 14px;
+}
+
+/* Footer buttons */
+.project-footer {
+  display: flex;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.project-footer .btn {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: inherit;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  padding: 6px 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.project-footer .btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.project-footer .btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Accent colors */
+.border-success {
+  border-color: #198754 !important;
+}
+
+.border-danger {
+  border-color: #dc3545 !important;
+}
+
+.border-dark {
+  border-color: #6c757d !important;
+}
+
+.border-success .project-header h4 {
+  color: #198754;
+}
+
+.border-danger .project-header h4 {
+  color: #dc3545;
+}
+
+.border-dark .project-header h4 {
+  color: #6c757d;
+}
+
+/* Service Box */
+.service-box {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 123, 255, 0.2);
+}
+
+/* Icon Circle */
+.service-icon-wrap {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.service-box:hover .service-icon-wrap {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #0056b3, #0099cc);
+}
+
+/* Heading */
+.service-box h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.service-box p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* Progress Bar Styling */
+.custom-progress {
+  height: 10px;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+/* Gradients for bars */
+.bg-gradient-warning {
+  background: linear-gradient(90deg, #ffc107, #ff9800);
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(90deg, #e53935, #ff5252);
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(90deg, #212121, #424242);
+}
+
+.bg-gradient-info {
+  background: linear-gradient(90deg, #00bcd4, #2196f3);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
+}
+
+/* Icons with space */
+h6 i {
+  color: #007bff;
+}
