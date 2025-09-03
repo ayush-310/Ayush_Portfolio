@@ -11554,3 +11554,58 @@ body {
 h6 i {
   color: #007bff;
 }
+
+/* Base Styles for Tech Sections */
+.tech-list-languages,
+.tech-list-frameworks,
+.tech-list-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Badge Styles (common look across all) */
+.tech-badge-lang,
+.tech-badge-fw,
+.tech-badge-tools {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+/* Image inside badges */
+.tech-badge-lang img,
+.tech-badge-fw img,
+.tech-badge-tools img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hover effects */
+.tech-badge-lang:hover {
+  background: rgba(255, 193, 7, 0.15);
+  /* amber highlight */
+  transform: translateY(-3px);
+}
+
+.tech-badge-fw:hover {
+  background: rgba(40, 167, 69, 0.15);
+  /* green highlight */
+  transform: translateY(-3px);
+}
+
+.tech-badge-tools:hover {
+  background: rgba(0, 123, 255, 0.15);
+  /* blue highlight */
+  transform: translateY(-3px);
+}
